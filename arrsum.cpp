@@ -11,3 +11,14 @@ int ArraySum(int n,int arr[])
     
     return Sum;
 }
+
+
+
+int main ()
+{
+    int n=4;
+    int arr[]={1,4,5,6};
+    
+    int sum=ArraySum(n, arr);
+    cout<<sum;
+}
