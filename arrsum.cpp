@@ -1,12 +1,11 @@
 #include<iostream>
 using namespace std;
 
-int ArraySum(int n,int arr[])
-{
-    int Sum=0;
-    for(int i=0;i<n;i++)
+int simpleArraySum(vector<int> ar) {
+int Sum=0;
+    for(int i=0;i<ar.size();i++)
     {
-        Sum = Sum + arr[i];
+        Sum = Sum + ar[i];
     }
     
     return Sum;
@@ -14,11 +13,3 @@ int ArraySum(int n,int arr[])
 
 
 
-int main ()
-{
-    int n=4;
-    int arr[]={1,4,5,6};
-    
-    int sum=ArraySum(n, arr);
-    cout<<sum;
-}
